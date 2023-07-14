@@ -1,0 +1,50 @@
+srun -N8 --mem=8gb -t 2:00:00 --pty bash
+
+interactive task
+
+module load Julia/1.8.2-linux-x86_64
+
+module av *ulia*
+
+
+sends output form the console to file
+
+./program >> file
+
+Interactive task
+srun -N8 --mem=8gb -t 01:00:00 --pty bash
+
+Module list
+module av
+
+Moule load 
+module load name_of_module
+
+e.g.
+module load imkl/2022.1.0 
+
+sbatch files
+
+#!/bin/bash
+#SBATCH -t 150:00:00
+#SBATCH --ntasks=8
+#SBATCH --mem=24gb
+
+module load what_i_need
+
+./execute 
+
+ run sbatch
+
+sbatch name_of_the_file
+
+
+scancel job_id
+
+
+*
+echo " Jacek " >> log
+echo " Jacek " >& log
+
+
+interactive -> scatt to find how resources was used
